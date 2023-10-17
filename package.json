@@ -1,0 +1,25 @@
+{
+  "name": "com-adamkiss-code-indesign-tagged-markup",
+  "displayName": "code-indesign-tagged-markup",
+  "description": "Tagged markup for indesign",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "idtxt",
+      "aliases": ["InDesign Tagged Markup", "idtxt"],
+      "extensions": ["idtxt"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "idtxt",
+      "scopeName": "source.idtxt",
+      "path": "./syntaxes/idtxt.tmLanguage.json"
+    }]
+  }
+}
